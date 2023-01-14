@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CanvasAnimation" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <attr name="wavesViewStyle" format="reference" />
+
+    <declare-styleable name="WavesView">
+        <attr name="waveColor" format="color" />
+        <attr name="waveStrokeWidth" format="dimension" />
+        <attr name="waveGap" format="dimension" />
+    </declare-styleable>
+
+    <style name="Widget.WaveView" parent="@android:style/Widget">
+        <item name="waveStrokeWidth">1dp</item>
+        <item name="waveColor">@color/white</item>
+        <item name="waveGap">16dp</item>
+    </style>
+</resources>
